@@ -1,519 +1,453 @@
-
 <!DOCTYPE html>
 
-<html>
-  <title>Elissa Colich</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
-<style>
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: "Montserrat", sans-serif
-    }
-
-    .w3-row-padding img {
-      margin-bottom: 12px
-    }
-
-    /* Set the width of the sidebar to 120px */
-
-    .w3-sidebar {
-      width: 120px;
-      background: #222;
-    }
-
-    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-
-    #main {
-      margin-left: 120px
-    }
-
-    /* Remove margins from "page content" on small screens */
-
-    @media only screen and (max-width: 600px) {
-      #main {
-        margin-left: 0
-      }
-    }
-      
-    .sally {
-          font-style: italic;
-    }
-    
-    .button {
-        background-color: #f4530c;
-        width: 200px;
-        height: 40px;
+<html lang="en">
+    <head>
         
-    }
-    
-    .button:hover {
-        background-color: #ffffff;
-    }
-    
-     .resbutton {
-        background-color: #408e8e;
-        border-color: #ffffff;
-        width: 200px;
-        height: 40px;
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Omnifood is a premium food delivery service with the mission to bring affordable and healthy meals to as many people as possible">
         
-    }
-    
-    .resbutton:hover {
-        background-color: #ffffff;
-    }
-    
-    a:link {
-        text-decoration: none;
-    }
-    
-* img {
-    max-width:100%;
-    height: auto;
-}
-    
-* {
-    box-sizing: border-box;
-}
-
-.img-container {
-    float: left;
-    width: 50.00%;
-    padding: 5px;
-}
-
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-    
- * {box-sizing: border-box}
-  body {font-family: Verdana, sans-serif; margin:0}
-  .mySlides {display: none}
-  img {vertical-align: middle;}
-  
-  /* Slideshow container */
-  .slideshow-container {
-    max-width: 700px;
-    position: relative;
-    margin: left;
-  }
-  
-  /* Next & previous buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: limegreen;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  
-  /* Caption text */
-  
-  /* Number text (1/3 etc) */
-  
-  
-  /* The dots/bullets/indicators */
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
-    background-color: limegreen;
-  }
-  
-  /* Fading animation */
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @-webkit-keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  
-  /* On smaller screens, decrease text size */
-  @media only screen and (max-width: 300px) {
-    .prev, .next,.text {font-size: 11px}
-  }
-
-      .summary {
-          font-size: 18px;
-          margin-bottom: 20px;
-      }
-    
-    .quote {
-        color: #408e8e;
-        font-style: italic;
-        font-size: 25px;
-        text-align: center;
-        font-weight: bold;
+        <link rel="stylesheet" type="text/css" href="Resources/CSS/style.css">
+        <link rel="stylesheet" type="text/css" href="Resources/CSS/queries.css">
+        <link rel="stylesheet" type="text/css" href="Vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="Vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="Vendors/css/animate.css">
+        <link href="http://fonts.googleapis.css?family=Lato:100,300,400,300italic" rel="stylesheet" type="text/css">
+<!--        old version-->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css"> 
+        <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
         
-    }
+        
+<!--        new version goes with script at end-->
+        <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
+        
+        <title>Omnifoods</title>
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="\Resources\favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="\Resources\favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="\Resources\favicons/favicon-16x16.png">
+        <link rel="manifest" href="\Resources\favicons/site.webmanifest">
+        <link rel="mask-icon" href="\Resources\favicons/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="\Resources\favicons/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="\Resources\favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+        
+    </head>
     
-    .intresume {
-        align-content: center;
-    }
-      
-</style>
-  
-
-  <body class="w3-black">
-
-    <!-- Icon Bar (Sidebar - hidden on small screens) -->
-    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-      <!-- Avatar image in top left corner -->
-      
-      <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
-  </a>
-      <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT</p>
-  </a>
-<a href="#skills" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-check-square-o w3-xxlarge"></i>
-    <p>SKILLS</p>
-  </a>
-      <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-archive w3-xxlarge"></i>
-    <p>PROJECTS</p>
-   </a>
-      <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACT</p>
-  </a>
-    </nav>
-
-    <!-- Navbar on small screens (Hidden on medium and large screens) -->
-    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-      <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-        <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-        <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-        <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PROJECTS</a>
-        <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
-      </div>
-    </div>
-
-    <!-- Page Content -->
-    <div class="w3-padding-large" id="main">
-      <!-- Header/Home -->
-      <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-        <h1 class="w3-jumbo"><span class="w3-hide-small"></span> Elissa Colich</h1>
-
-        <img src="https://utdallas.edu/~elissa.colich/Grapevine Feb 2013 106.jpg" class="w3-circle" alt="" style="width:25%">     
-          
-	<h2> Data Evangelist</h2>          
-	 </header>
-	    
-      <!-- About Section -->
-      <div class="w3-content w3-justify w3-text-grey w3-padding-55" id="about">
-        <h2 class="w3-text-light-grey">About Me</h2>
-        <hr style="width:200px" class="w3-opacity">
-        
-    
-        <p class="summary">Champion of all things data, driver of social change, natural goofball, and currently in a personal transformation from kick-butt barista to tech guru. 
-        <br>
-        <br>
-        I believe in 
-        equitable access to upward social mobility, public service, 
-        cupcakes, puns in any and every form, and that... 
-        </p>
-           <h3 style="text-align: center"><q class="quote">The Honey doesn't taste so good once it's being eaten</q><br><span class="autho"style="font-size: 15px; text-align: right;">-Benjamin Hoff</span></h3>
-        
-          
- <div class="w3-padding-55 w3-content" id="about display: block;">
-      <h2 class="w3-text-light-grey">My Interests</h2>
-      <hr style="width:200px" class="w3-opacity">
-
-	   <div class="w3-row-padding" style="margin:0-16px">
-
-    <span class="gif" title="Traveling"><img src="drive.gif" class="w3-left w3-margin-right" style="float: left;height: 113px; padding: 0;"></span>
-    <span class="gif" title="Reading"><img src="snoopy.gif" class="w3-left w3-margin-right" style="float:left; height: 113px; padding: 0;"></span> 
-    <span class="gif" title="Birding"> <img src="birding.gif" class="w3-left w3-margin-right" style="float:left; height: 113px; padding: 0;"></span>
-   <span class="gif" title="Coding"> <img src="octocat-wave-dribbble%20(1).gif" class="w3-left w3-margin-right" style="float:left; height: 113px; padding: 0;"></span>
-        </div>
-	</div>
-
-      
-      
-<div class="w3-content w3-justify w3-text-grey w3-padding-55" id="skills">
-      <h2 class="w3-text-light-grey">My Skills</h2>
-      <hr style="width:200px" class="w3-opacity">
-    
-        <p class="w3-wide">Customer Service</p>
-        <p class="w3-wide">Business Analytics</p>
-        <p class="w3-wide">Strategic Planning</p>
-        <p class="w3-wide">Event Planning</p>
-        <p class="w3-wide">Project Management</p>
-        <p class="w3-wide">Sales & Budgeting</p>
-        <p class="w3-wide">Performance Management</p>
-        <p class="w3-wide">Training & Development</p>
-        <p class="w3-wide">Team Development</p>
-        <p class="w3-wide">Servant Leadership</p>
-        <p class="w3-wide">Talent Management</p>
-        <p class="w3-wide">Data Intelligence</p>
-        
-          <br>
-        <button class="resbutton">
-      <a class="intresume" href="IntResume.html">Interactive Resume</a>
-    </button>
-    <br>
-    <br>
-    <button class="button">
-      <a href="EColich_Data%20Evangelist.pdf"><i class="fa fa-download"></i>Resume</a>
-    </button>
-          </div>
-    <br>
-    <br>
-        
-      <div class="w3-row-padding" style="margin:0 -16px">
-        <div class="w3-half w3-margin-bottom">
-          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-            <li class="w3-padding-16">Excel</li>
-	    <li class="w3-padding-16">PowerPoint</li>	
-            <li class="w3-padding-16">STATA</li>
-            <li class="w3-padding-16">Tableau</li>
-            <li class="w3-padding-16">Alteryx</li>
-          </ul>
-        </div>
-
-        <div class="w3-half">
-          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-            <li class="w3-padding-16">R</li>
-            <li class="w3-padding-16">SQL</li>
-            <li class="w3-padding-16">HTML</li>
-	    <li class="w3-padding-16">CSS</li>
-            <li class="w3-padding-16">Google Analytics</li>
-          </ul>
-        </div>
-      </div>  
-</div>
-
-    <!-- Portfolio Section -->
-     <div class="w3-content w3-justify w3-text-grey w3-padding-55" id="photos">
-      <h2 class="w3-text-light-grey">My Projects</h2>
-      <hr style="width:200px" class="w3-opacity">
-
-  <div class="slideshow-container">
-
-
-<div class="mySlides fade">
-    <div class="numbertext"></div>
-    <a href="https://slides.com/ecoli14/deck-2/fullscreen"><img src="http://www.utdallas.edu/~elissa.colich/EPPS 6323_Midterm.png" style="width:100%"></a>
-    <div class="text">Tableau Presentation</div>
-  </div>
-  
-  <div class="mySlides fade">
-    <div class="numbertext"></div>
-      <a href="NonprofiitBudgetAnalysis.pdf" target="_blank"><img src="http://utdallas.edu/~elissa.colich/PromiseHouse.html.jpg" style="width:100%"></a>
-    <div class="text">Financial Analysis</div>
-  </div>
-  
-  <div class="mySlides fade">
-      <div class="numbertext"></div>
-      <a href="FinancialAnalysis.pdf"><img src="http://www.utdallas.edu/~elissa.colich/Taos.html.jpg" style="width:100%"></a>
-      <div class="text">Mock Nonprofit Budget Analysis</div>
-    </div>
-      
-    <div class="mySlides fade">
-      <div class="numbertext"></div>
-      <a href="Mock%20Nonprofit%20Strategic%20Plan.pdf" target="_blank"><img src="StrategicPlanning.jpg" style="width:100%"></a>
-      <div class="text">Mock Strategic Plan</div>
-    </div>
-      
-    <div class="mySlides fade">
-      <div class="numbertext"></div>
-      <a href="Nonprofit_Analysis.pptx" target="_blank"><img src="Nonprofit_Analysis.jpg" style="width:100%"></a>
-      <div class="text">Nonprofit Analysis</div>
-    </div>
-      
-    <div class="mySlides fade">
-    <div class="numbertext"></div>
-      <a href="Case%20Study_Commit%20Interview.pptx"><img src="Case%20Study_Commit%20Interview.jpg" style="width:100%"></a>
-    <div class="text">Case Presentation for Internship Interview</div>
-  </div>
-      
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  
-  </div>
-  
-  <div style="text-align:left">
-    <span class="dot" onclick="currentSlide(1)"></span> 
-    <span class="dot" onclick="currentSlide(2)"></span> 
-    <span class="dot" onclick="currentSlide(3)"></span> 
-    <span class="dot" onclick="currentSlide(4)"></span> 
-    <span class="dot" onclick="currentSlide(5)"></span>
-    <span class="dot" onclick="currentSlide(6)"></span>
-  </div>
-  
-  <script>
-  var slideIndex = 1;
-  showSlides(slideIndex);
-  
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
-  
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
-  
-  function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1}    
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-  }
-  </script>
-  <br>
- 
-    <iframe src="//slides.com/ecoli14/deck/embed" width="660" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-	<p><b>Data Visualization Presention</b></p>
-
-<br>
-
-
-  <br/>
-  
-   <iframe src="//slides.com/ecoli14/deck-4-6/embed" width="660" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>	
-	<p><b>Web Scraping Project</b></p>
-  
-
-
-    <!-- Contact Section -->
-         <div class="w3-content w3-justify w3-text-grey w3-padding-30" id="contact"><img src="http://www.utdallas.edu/~elissa.colich/let's connect.png" style="width:600px;height:400px;">
-
-        
-      <div class="w3-section">
-        <a href="mailto:elissa.coli@gmail.com"><p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> elissa.coli@gmail.com</p></a>
+    <body>
+        <header>
+            <nav>
+                <div class="row">
+                    <img src="Resources/Images/logo-white.png" alt="Omnifood logo" class="logo">
+                    <img src="Resources/Images/logo.png" alt="Omnifood logo" class="logo-black">
+                    <ul class="main-nav js--main-nav">
+                        <li><a href="#features">Food Delivery</a></li>
+                        <li><a href="#works">How it works</a></li>
+                        <li><a href="#cities">Our cities</a></li>
+                        <li><a href="#plans">Sign up</a></li>
+                    </ul>
+                    <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+                </div>
             
-        <a href="https://goo.gl/maps/vF9Gj9entDs"><p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>Dallas, TX</p></a> 
-      </div>
-
-      <head>
-          <style>
-             #map {
-              height: 200px;
-              width: 50%;
-             }
-          </style>
-        </head>
-        <body>
-          <div id="map"></div>
-          <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-            function initMap() {
-              var uluru = {lat: 32.9857252, lng: -96.7502483000000};
-              var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 4,
-                center: uluru
-              });
-              var marker = new google.maps.Marker({
-                position: uluru,
-                map: map
-              });
-            }
-          </script>
-          <script async defer
-          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqyGDNA6niq_WML8TGbxw4hBzloWgJhvA&callback=initMap">
-          </script>
-        </body>
-
-    <!-- Footer -->
-    <footer class="w3-content w3-padding-62 w3-text-grey w3-xlarge">
-      <a href="https://www.facebook.com/elissa.colich"><i class="fa fa-facebook-official w3-hover-text-blue"></i></a>
-      <a href="https://www.linkedin.com/in/elissa-colich"><i class="fa fa-linkedin w3-hover-text-blue"></i></a>
-      <a href="https://github.com/ecolich"><i class="fa fa-github w3-hover-text-blue"></i></a>
-      <p class="w3-medium">Powered by <a href="https://www.w3schools.com" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-      <!-- End footer -->
-    </footer>
-
-    <!-- END PAGE CONTENT -->
-
-    <script data-cfasync="false" src="/cdn-cgi/scripts/d07b1474/cloudflare-static/email-decode.min.js"></script>
-         </div>
-      
-      </div>
-      </div>
+            </nav>
+            
+            <div class="hero-text-box">
+                <h1>Goodbye junk food.<br> 
+                    Hello super healthy meals.</h1>
+                <a class="btn btn-full js--scroll-to-plans" href="#">I'm hungry</a>
+                <a class="btn btn-ghost js--scroll-to-start" href="#">Show me more</a>
+            
+            </div>
+        
+        </header>
+        
+        <section class="section-features js--section-features" id="features">
+            <div class="row">
+                <h2>Get food fast &mdash; not fast food.</h2>
+                <p class="long-copy">
+                Hello, we're Omnifood, your new premium food delivery service. We know you're always busy. No time for cooking. So let us take care of that, we're really good at it, we promise!
+                </p>
+            </div>
+            
+            <div class="row js--wp-1">
+                <div class="col span-1-of-4 box">
+                    <i class="ion-ios-infinite icon-big"></i>
+                    <h3>Up to 365 days/year</h3>
+                    <p>Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage. You can also choose to order more flexibly if that's your style.</p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <i class="ion-ios-stopwatch icon-big"></i>
+                    <h3>Ready in 20 minutes</h3>
+                    <p>You're only twenty minutes away from your delicious and super healthy meals delivered right to your home. We work with the best chefs in each town to ensure that you're 100% happy.</p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <i class="ion-ios-nutrition icon-big"></i>
+                    <h3>100% organic</h3>
+                    <p>All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics. Good for your health, the environment, and it also tastes better!</p>
+                </div>
+                <div class="col span-1-of-4 box">
+                   <i class="ion-ios-cart icon-big"></i>
+                    <h3>Order anything</h3>
+                    <p>We don't limit your creativity, which means you can order whatever you feel like. You can also choose from our menu containing over 100 delicious meals. It's up to you!</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section-meals">
+            <h3 class="hidden">filler</h3>
+            <ul class="meals-showcase clearfix">
+                <li>
+                    <figure class="meal-photo">
+                        <img src="Resources/Images/1.jpg" alt="Korean bibimbap with egg and vegetables"> 
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="Resources/Images/2.jpg" alt="Simple italian pizza with cherry tomatoes"> 
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="Resources/Images/3.jpg" alt="Chicken breast steak with vegetables"> 
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="Resources/Images/4.jpg" alt="Autumn pumpkin soup">
+                    </figure>
+                </li>
+            </ul>
+            
+            <ul class="meals-showcase clearfix">
+                <li>
+                    <figure class="meal-photo">
+                        <img src="Resources/Images/5.jpg" alt="Paleo beef steak with vegetables"> 
+                    </figure>
+                </li>
+                <li>  
+                    <figure class="meal-photo">
+                        <img src="Resources/Images/6.jpg" alt="Healthy baguette with egg and vegetables"> 
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="Resources/Images/7.jpg" alt="Burger with cheddar and bacon"> 
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="Resources/Images/8.jpg" alt="Granola with cherries and strawberries">
+                    </figure>
+                </li>
+            </ul>
+        </section>
+        
+        <section class="section-steps" id="works">
+            <div class="row">
+                <h2>How it works &mdash; Simple as 1, 2, 3</h2>
+            </div>
+            
+            <div class="row">
+                <div class="col span-1-of-2 steps-box">
+                    <img src="Resources/Images/app-iPhone.png" alt="Omnifood app on iPhone" class="app-screen js--wp-2">
+                </div>
+                <div class="col span-1-of-2 steps-box">
+                    <div class="works-step">
+                        <div>1</div>
+                        <p>Choose the subscription plan that best fits your needs and sign up today.</p>
+                    </div>
+                    <div class="works-step">
+                        <div>2</div>
+                        <p>Order your delicious meal using our mobile app or website. Or you can even call us!</p>
+                    </div>
+                    <div class="works-step">
+                        <div>3</div>
+                        <p>Enjoy your meal after less than 20 minutes. See you the next time!</p>
+                    </div>
+                    
+                    <a href="#" class="btn-app"><img src="Resources/Images/download-app.svg" alt="App Store Button"></a>
+                    <a href="#" class="btn-app"><img src="Resources/Images/download-app-android.png" alt="Play Store Button"></a> 
+                </div>
+            </div>
+        </section>
+        
+        <section class="section-cities" id="cities">
+            <div class="row">
+                <h2>We're currently in these cities</h2>
+            </div>
+            <div class="row js--wp-3">
+                <div class="col span-1-of-4 box">
+                     <img src="Resources/Images/lisbon-3.jpg" alt="Lisbon">
+                    <h3>Lisbon</h3>
+                    <div class="city-feature">
+                        <i class="ion-ios-person icon-small"></i>
+                        1600+ happy eaters
+                    </div>
+                    <div class="city-feature">
+                        <i class="ion-ios-star icon-small"></i>
+                        60+ top chefs
+                    </div>
+                    <div class="city-feature">   
+                        <i class="ion-logo-twitter icon-small"></i>
+                        <a href="#">@omnifood_lx</a>
+                    </div>
+                </div>
+                <div class="col span-1-of-4 box">
+                     <img src="Resources/Images/san-francisco.jpg" alt="San Francisco">
+                    <h3>San Francisco</h3>
+                    <div class="city-feature">
+                        <i class="ion-ios-person icon-small"></i>
+                        3700+ happy eaters
+                    </div>
+                    <div class="city-feature">
+                        <i class="ion-ios-star icon-small"></i>
+                        160+ top chefs
+                    </div>
+                    <div class="city-feature">   
+                        <i class="ion-logo-twitter icon-small"></i>
+                        <a href="#">@omnifood_sf</a>
+                    </div>
+                </div>
+                <div class="col span-1-of-4 box">
+                     <img src="Resources/Images/berlin.jpg" alt="Berlin">
+                    <h3>Berlin</h3>
+                    <div class="city-feature">
+                        <i class="ion-ios-person icon-small"></i>
+                        2300+ happy eaters
+                    </div>
+                    <div class="city-feature">
+                        <i class="ion-ios-star icon-small"></i>
+                        110+ top chefs
+                    </div>
+                    <div class="city-feature">   
+                        <i class="ion-logo-twitter icon-small"></i>
+                        <a href="#">@omnifood_berlin</a>
+                    </div>
+                </div>
+                <div class="col span-1-of-4 box">
+                     <img src="Resources/Images/london.jpg" alt="London">
+                    <h3>London</h3>
+                    <div class="city-feature">
+                        <i class="ion-ios-person icon-small"></i>
+                        1200+ happy eaters
+                    </div>
+                    <div class="city-feature">
+                        <i class="ion-ios-star icon-small"></i>
+                        50+ top chefs
+                    </div>
+                    <div class="city-feature">   
+                        <i class="ion-logo-twitter icon-small"></i>
+                        <a href="#">@omnifood_london</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section-testimonials">
+            <div class="row">
+                <h2>Our customers can't live without us</h2>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <blockquote>
+                        Omnifood is just awesome! I just launched a startup which leaves me with no time for cooking, so Omnifood is a life-saver. Now that I got used to it, I couldn't live without my daily meals! 
+                        <cite><img src="Resources/Images/customer-1.jpg" alt="Alberto">(Alberto Duncan)</cite>
+                    </blockquote>
+                </div>
+                <div class="col span-1-of-3">
+                    <blockquote>
+                        Inexpensive, healthy and great-tasting meals, delivered right to my home. We have lots of food delivery here in Lisbon, but no one comes even close to Omifood. Me and my family are so in love! 
+                        <cite><img src="Resources/Images/customer-2.jpg" alt="Joana">(Joana Silva)</cite>
+                     </blockquote>
+                </div>
+                <div class="col span-1-of-3">
+                    <blockquote>
+                        I was looking for a quick and easy food delivery service in San Franciso. I tried a lot of them and ended up with Omnifood. Best food delivery service in the Bay Area. Keep up the great work!
+                        <cite><img src="Resources/Images/customer-3.jpg" alt="Milton">(Milton Chapman)</cite>
+                    </blockquote>  
+                </div>
+            </div>
+            </div>
+        </section>
+        
+        <section class="section-plans js--section-plans" id="plans">
+            <div class="row">
+                <h3>Start eating healthy today</h3>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <div class="plan-box js--wp-4">
+                        <div>
+                            <h3>Premium</h3>
+                            <p class="plan-price">
+                            $399<span>/month</span>
+                            </p>
+                            <p class="plan-price-meal">That's only $13.30 per meal</p>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><i class="ion-ios-checkmark icon-small"></i>1 meal every day</li>
+                                <li><i class="ion-ios-checkmark icon-small"></i>Order 24/7</li>
+                                <li><i class="ion-ios-checkmark icon-small"></i>Access to newest creations</li>
+                                <li><i class="ion-ios-checkmark icon-small"></i>Free delivery</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a href="#" class="btn btn-full">Sign Up Now</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col span-1-of-3">
+                    <div class="plan-box">
+                        <div>
+                            <h3>Pro</h3>
+                            <p class="plan-price">
+                            $149<span>/month</span>
+                            </p>
+                            <p class="plan-price-meal">That's only $14.90 per meal</p>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><i class="ion-ios-checkmark icon-small"></i>1 meal 10 days per month</li>
+                                <li><i class="ion-ios-checkmark icon-small"></i>Order 24/7</li>
+                                <li><i class="ion-ios-checkmark icon-small"></i>Access to newest creations</li>
+                                <li><i class="ion-ios-checkmark icon-small"></i>Free delivery</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a href="#" class="btn btn-ghost">Sign Up Now</a> 
+                        </div>
+                    </div>
+                </div>
+            <div class="col span-1-of-3">
+                    <div class="plan-box">
+                        <div>
+                            <h3>Starter</h3>
+                            <p class="plan-price">$19<span>/meal</span></p>
+                            <p class="plan-price-meal">&nbsp;</p>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><i class="ion-ios-checkmark icon-small"></i>1 meal </li>
+                                <li><i class="ion-ios-checkmark icon-small"></i>Order from 8 am to 12 pm</li> 
+                                <li><i class="ion-ios-checkmark icon-small"></i>Free delivery</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a href="#" class="btn btn-ghost">Sign Up Now</a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section-form">
+            <div class="row">
+                <h3>We're happy to hear from you</h3>
+            </div>
+            <div class="row">
+                <form method="post" action="#" class="contact-form">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                        </div>
+                    </div>
+                     <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="find-us">How did you find us</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <select name="find us" id="find-us">
+                                <option value="Friends">Friends</option>
+                                <option value="Search">Search Engine</option>
+                                <option value="ad">Advertisement</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Newsletter</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="checkbox" name="news" id="news" checked> Yes, Please 
+                        </div>
+                    </div>
+                     <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="message">Drop us a line</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>&nbsp;</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="submit" value="Send it!">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">ios App</a></li>
+                        <li><a href="#">Android App</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#"><i class="ion-logo-facebook"></i></a></li>
+                        <li><a href="#"><i class="ion-logo-twitter"></i></a></li>
+                        <li><a href="#"><i class="ion-logo-googleplus"></i></a></li>
+                        <li><a href="#"><i class="ion-logo-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    Copyright &copy; 2015 by Omnifood. All rights reserved. 
+                </p>
+            </div>
+        </footer>
+        <!--next 3 .js extensions allow or function on older browser -->
+        <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css">
+        <!--jquery-->
+        <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+        <script src="Vendors/js/jquery.waypoints.min.js"></script>
+        <script src="Resources/JS/script.js"></script>
     </body>
+
+    
 
 </html>
 
 
+<!--
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+-->
