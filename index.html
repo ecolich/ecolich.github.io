@@ -1,514 +1,480 @@
-
-
 <!DOCTYPE html>
-
-<html>
-  <title>Elissa Colich</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
-<style>
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: "Montserrat", sans-serif
-    }
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-    .body {
-        background: #253494;
-    }
-
-    .w3-row-padding img {
-      margin-bottom: 12px
-    }
-
-    /* Set the width of the sidebar to 120px */
-
-    .w3-sidebar {
-      width: 120px;
-      background: #222;
-    }
-
-    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-
-    #main {
-      margin-left: 120px
-    }
-
-    /* Remove margins from "page content" on small screens */
-
-    @media only screen and (max-width: 600px) {
-      #main {
-        margin-left: 0
-      }
-    }
-      
-    .sally {
-          font-style: italic;
-    }
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
     
-    .button {
-        background-color: #f4530c;
-        width: 200px;
-        height: 40px;
-        
-    }
+    <link rel="stylesheet" href="css/style.css">
     
-    .button:hover {
-        background-color: #ffffff;
-    }
-    
-     .resbutton {
-        background-color: #408e8e;
-        border-color: #ffffff;
-        width: 200px;
-        height: 40px;
-        
-    }
-    
-    .resbutton:hover {
-        background-color: #ffffff;
-    }
-    
-    a:link {
-        text-decoration: none;
-    }
-    
-* img {
-    max-width:100%;
-    height: auto;
-}
-    
-* {
-    box-sizing: border-box;
-}
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/00f1f5c836.js"></script>
 
-.img-container {
-    float: left;
-    width: 50.00%;
-    padding: 5px;
-}
+    <title>Natours | Exciting tours for adventurous people</title>
+</head>
 
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-    
- * {box-sizing: border-box}
-  body {font-family: Verdana, sans-serif; margin:0}
-  .mySlides {display: none}
-  img {vertical-align: middle;}
-  
-  /* Slideshow container */
-  .slideshow-container {
-    max-width: 700px;
-    position: relative;
-    margin: left;
-  }
-  
-  /* Next & previous buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: limegreen;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  
-  /* Caption text */
-  
-  /* Number text (1/3 etc) */
-  
-  
-  /* The dots/bullets/indicators */
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
-    background-color: limegreen;
-  }
-  
-  /* Fading animation */
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @-webkit-keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  
-  /* On smaller screens, decrease text size */
-  @media only screen and (max-width: 300px) {
-    .prev, .next,.text {font-size: 11px}
-  }
-
-      .summary {
-          font-size: 18px;
-          margin-bottom: 20px;
-      }
-    
-    .quote {
-        color: #408e8e;
-        font-style: italic;
-        font-size: 25px;
-        text-align: center;
-        font-weight: bold;
-        
-    }
-    
-    .intresume {
-        align-content: center;
-    }
-      
-</style>
-  
-
-  <body class="w3-black">
-
-    <!-- Icon Bar (Sidebar - hidden on small screens) -->
-    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-      <!-- Avatar image in top left corner -->
-      
-      <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
-  </a>
-      <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT</p>
-  </a>
-<a href="#skills" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-check-square-o w3-xxlarge"></i>
-    <p>SKILLS</p>
-  </a>
-      <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-archive w3-xxlarge"></i>
-    <p>PROJECTS</p>
-   </a>
-      <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACT</p>
-  </a>
-    </nav>
-
-    <!-- Navbar on small screens (Hidden on medium and large screens) -->
-    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-      <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-        <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-        <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-        <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PROJECTS</a>
-        <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
-      </div>
-    </div>
-
-    <!-- Page Content -->
-    <div class="w3-padding-large" id="main">
-      <!-- Header/Home -->
-      <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-        <h1 class="w3-jumbo"><span class="w3-hide-small"></span> Elissa Colich</h1>
-
-        <img src="https://utdallas.edu/~elissa.colich/Grapevine Feb 2013 106.jpg" class="w3-circle" alt="" style="width:25%">     
-          
-	<h2> Data Evangelist</h2>          
-	 </header>
-	    
-      <!-- About Section -->
-      <div class="w3-content w3-justify w3-text-grey w3-padding-55" id="about">
-        <h2 class="w3-text-light-grey">About Me</h2>
-        <hr style="width:200px" class="w3-opacity">
-        
-    
-        <p class="summary">Champion of all things data, driver of social change, and natural goofball. 
-        <br>
-        <br>
-        I believe in 
-        equitable access to upward social mobility, public service, 
-        cupcakes, puns in any and every form, and that... 
-        </p>
-           <h3 style="text-align: center"><q class="quote">The Honey doesn't taste so good once it's being eaten</q><br><span class="autho"style="font-size: 15px; text-align: right;">-Benjamin Hoff</span></h3>
-        
-          
- <div class="w3-padding-55 w3-content" id="about display: block;">
-      <h2 class="w3-text-light-grey">My Interests</h2>
-      <hr style="width:200px" class="w3-opacity">
-
-	   <div class="w3-row-padding" style="margin:0-16px">
-
-    <span class="gif" title="Traveling"><img src="drive.gif" class="w3-left w3-margin-right" style="float: left;height: 113px; padding: 0;"></span>
-    <span class="gif" title="Reading"><img src="snoopy.gif" class="w3-left w3-margin-right" style="float:left; height: 113px; padding: 0;"></span> 
-    <span class="gif" title="Birding"> <img src="birding.gif" class="w3-left w3-margin-right" style="float:left; height: 113px; padding: 0;"></span>
-   <span class="gif" title="Coding"> <img src="octocat-wave-dribbble%20(1).gif" class="w3-left w3-margin-right" style="float:left; height: 113px; padding: 0;"></span>
-        </div>
-	</div>
-
-      
-      
-<div class="w3-content w3-justify w3-text-grey w3-padding-55" id="skills">
-      <h2 class="w3-text-light-grey">My Skills</h2>
-      <hr style="width:200px" class="w3-opacity">
-    
-        <p class="w3-wide">Customer Service</p>
-        <p class="w3-wide">Business Analytics</p>
-        <p class="w3-wide">Strategic Planning</p>
-        <p class="w3-wide">Event Planning</p>
-        <p class="w3-wide">Project Management</p>
-        <p class="w3-wide">Sales & Budgeting</p>
-        <p class="w3-wide">Performance Management</p>
-        <p class="w3-wide">Training & Development</p>
-        <p class="w3-wide">Team Development</p>
-        <p class="w3-wide">Servant Leadership</p>
-        <p class="w3-wide">Talent Management</p>
-        <p class="w3-wide">Data Intelligence</p>
-        
-          <br>
-        <button class="resbutton">
-      <a class="intresume" href="IntResume.html">Interactive Resume</a>
-    </button>
-    <br>
-    <br>
-    <button class="button">
-      <a href="EColich_Data%20Evangelist.pdf"><i class="fa fa-download"></i>Resume</a>
-    </button>
-          </div>
-    <br>
-    <br>
-        
-      <div class="w3-row-padding" style="margin:0 -16px">
-        <div class="w3-half w3-margin-bottom">
-          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-            <li class="w3-padding-16">Excel</li>
-	    <li class="w3-padding-16">PowerPoint</li>	
-            <li class="w3-padding-16">STATA</li>
-            <li class="w3-padding-16">Tableau</li>
-            <li class="w3-padding-16">Alteryx</li>
-          </ul>
-        </div>
-
-        <div class="w3-half">
-          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-            <li class="w3-padding-16">R</li>
-            <li class="w3-padding-16">SQL</li>
-            <li class="w3-padding-16">HTML</li>
-	    <li class="w3-padding-16">CSS</li>
-            <li class="w3-padding-16">Google Analytics</li>
-          </ul>
-        </div>
-      </div>  
-</div>
-
-    <!-- Portfolio Section -->
-     <div class="w3-content w3-justify w3-text-grey w3-padding-55" id="photos">
-      <h2 class="w3-text-light-grey">My Projects</h2>
-      <hr style="width:200px" class="w3-opacity">
-
-  <div class="slideshow-container">
-
-
-    <div class="mySlides fade">
-    <div class="numbertext"></div>
-    <a href="https://slides.com/ecoli14/deck-2/fullscreen"><img src="http://www.utdallas.edu/~elissa.colich/EPPS 6323_Midterm.png" style="width:100%"></a>
-    <div class="text">Tableau Presentation</div>
-  </div>
-      
-    <div class="mySlides fade">
-        <div class="numbertext"></div>
-            <a href="OmniIndex.html"><img src="logo-white.png"></a>
-        <div class="text">Mock Business Website</div>
-	  </div>
-  
-  <div class="mySlides fade">
-    <div class="numbertext"></div>
-      <a href="NonprofiitBudgetAnalysis.pdf" target="_blank"><img src="http://utdallas.edu/~elissa.colich/PromiseHouse.html.jpg" style="width:100%"></a>
-    <div class="text">Financial Analysis</div>
-  </div>
-  
-  <div class="mySlides fade">
-      <div class="numbertext"></div>
-      <a href="FinancialAnalysis.pdf"><img src="http://www.utdallas.edu/~elissa.colich/Taos.html.jpg" style="width:100%"></a>
-      <div class="text">Mock Nonprofit Budget Analysis</div>
-    </div>
-      
-    <div class="mySlides fade">
-      <div class="numbertext"></div>
-      <a href="Mock%20Nonprofit%20Strategic%20Plan.pdf" target="_blank"><img src="StrategicPlanning.jpg" style="width:100%"></a>
-      <div class="text">Mock Strategic Plan</div>
-    </div>
-      
-    <div class="mySlides fade">
-      <div class="numbertext"></div>
-      <a href="Nonprofit_Analysis.pptx" target="_blank"><img src="Nonprofit_Analysis.jpg" style="width:100%"></a>
-      <div class="text">Nonprofit Analysis</div>
-    </div>
-      
-    <div class="mySlides fade">
-    <div class="numbertext"></div>
-      <a href="Case%20Study_Commit%20Interview.pptx"><img src="Case%20Study_Commit%20Interview.jpg" style="width:100%"></a>
-    <div class="text">Case Presentation for Internship Interview</div>
-  </div>
-      
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  
-  </div>
-  
-  <div style="text-align:left">
-    <span class="dot" onclick="currentSlide(1)"></span> 
-    <span class="dot" onclick="currentSlide(2)"></span> 
-    <span class="dot" onclick="currentSlide(3)"></span> 
-    <span class="dot" onclick="currentSlide(4)"></span> 
-    <span class="dot" onclick="currentSlide(5)"></span>
-    <span class="dot" onclick="currentSlide(6)"></span>
-  </div>
-  
-  <script>
-  var slideIndex = 1;
-  showSlides(slideIndex);
-  
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
-  
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
-  
-  function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1}    
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-  }
-  </script>
-  <br>
- 
-    <iframe src="//slides.com/ecoli14/deck/embed" width="660" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-	<p><b>Data Visualization Presention</b></p>
-
-<br>
-
-
-  <br/>
-  
-   <iframe src="//slides.com/ecoli14/deck-4-6/embed" width="660" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>	
-	<p><b>Web Scraping Project</b></p>
-  
-
-
-    <!-- Contact Section -->
-         <div class="w3-content w3-justify w3-text-grey w3-padding-30" id="contact"><img src="http://www.utdallas.edu/~elissa.colich/let's connect.png" style="width:600px;height:400px;">
-
-        
-      <div class="w3-section">
-        <a href="mailto:elissa.coli@gmail.com"><p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> elissa.coli@gmail.com</p></a>
+<body>
+        <div class="nagivation">
+           <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+           <label for="navi-toggle" class="navigation__btn">
+               <span class="navigation__icon">&nbsp;</span>
+           </label>
+           <div class="navigation__background">&nbsp;</div>
+           
+           <nav class="navigation__nav">
+               <ul class="navigation__list">
+                   <li class="navigation__item"><a href="#" class="navigation__link">About Natours</a></li>
+                   <li class="navigation__item"><a href="#" class="navigation__link">Your benefits</a></li>
+                   <li class="navigation__item"><a href="#" class="navigation__link">Popular tours</a></li>
+                   <li class="navigation__item"><a href="#" class="navigation__link" id="stories">Stories</a></li>
+                   <li class="navigation__item"><a href="#" class="navigation__link">Book now</a></li>
+               </ul>
+           </nav>
+       </div>
             
-        <a href="https://goo.gl/maps/vF9Gj9entDs"><p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>Dallas, TX</p></a> 
-      </div>
+    <header class="header">
+        <div class="header__logo-box">
+            <img src="img/logo-white.png" alt="logo" class="header__logo">
+        </div>
 
-      <head>
-          <style>
-             #map {
-              height: 200px;
-              width: 50%;
-             }
-          </style>
-        </head>
-        <body>
-          <div id="map"></div>
-          <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-            function initMap() {
-              var uluru = {lat: 32.9857252, lng: -96.7502483000000};
-              var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 4,
-                center: uluru
-              });
-              var marker = new google.maps.Marker({
-                position: uluru,
-                map: map
-              });
-            }
-          </script>
-          <script async defer
-          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqyGDNA6niq_WML8TGbxw4hBzloWgJhvA&callback=initMap">
-          </script>
-        </body>
+        <div class="header__text-box">
+            <h1 class="heading-primary">
+                <span class="heading-primary--main">Outdoors</span>
+                <span class="heading-primary--sub">Where life happens</span>
+            </h1>
 
-    <!-- Footer -->
-    <footer class="w3-content w3-padding-62 w3-text-grey w3-xlarge">
-      <a href="https://www.facebook.com/elissa.colich"><i class="fa fa-facebook-official w3-hover-text-blue"></i></a>
-      <a href="https://www.linkedin.com/in/elissa-colich"><i class="fa fa-linkedin w3-hover-text-blue"></i></a>
-      <a href="https://github.com/ecolich"><i class="fa fa-github w3-hover-text-blue"></i></a>
-      <p class="w3-medium">Powered by <a href="https://www.w3schools.com" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-      <!-- End footer -->
+            <a href="#section-tours" class="btn btn--white btn--animated">Discover our tours</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-about">
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary">
+                    Exciting tours for adventurous people
+                </h2>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-2">
+                    <h3 class="heading-tertiary u-margin-bottom-small ">You're going to fall in love with nature</h3>
+                    <p class="paragraph">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex odio fugit vitae, doloremque aliquam optio et nisi suscipit nesciunt enim molestias id nostrum in, eveniet quaerat ipsa non provident! Fugiat?
+                    </p>
+                    <h3 class="heading-tertiary u-margin-bottom-small">Live adventurous like you neve have before</h3>
+                    <p class="paragraph">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex odio fugit vitae, doloremque aliquam optio et nisi suscipit nesciunt enim molestias id nostrum in, eveniet quaerat ipsa non provident! Fugiat?
+                    </p>
+                    
+                    <a href="#" class="btn-txt">learn More &rarr;</a>
+                
+                </div>
+                <div class="col-1-of-2">
+                    <div class="composition">
+                       
+                       <img srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
+                                 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                                 alt="Photo 1"
+                                 class="composition__photo composition__photo--p1"
+                                 src="img/nat-1-large.jpg">
+
+                            <img srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
+                                 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                                 alt="Photo 2"
+                                 class="composition__photo composition__photo--p2"
+                                 src="img/nat-2-large.jpg">
+
+                            <img srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
+                                 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                                 alt="Photo 3"
+                                 class="composition__photo composition__photo--p3"
+                                 src="img/nat-3-large.jpg">
+                       
+                       <!--
+                        <img src="img/nat-1-large.jpg" alt="photo 1" class="composition__photo composition__photo--p1">
+                        <img src="img/nat-2-large.jpg" alt="photo 2" class="composition__photo composition__photo--p2">
+                        <img src="img/nat-3-large.jpg" alt="photo 3" class="composition__photo composition__photo--p3">
+                        -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-features">
+        
+            <div class="row">
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <i class="feature-box__icon fa fa-globe"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Explore the world</h3>
+                        <p class="feature-box__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex odio fugit vitae, doloremque aliquam
+                        </p>
+                    </div>
+                </div>
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <i class="feature-box__icon far fa-compass"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Meet nature</h3>
+                        <p class="feature-box__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex odio fugit vitae, doloremque aliquam
+                        </p>
+                    </div>
+                </div>
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <i class="feature-box__icon far fa-map"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small">find your way</h3>
+                        <p class="feature-box__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex odio fugit vitae, doloremque aliquam
+                        </p>
+                    </div>
+                </div>
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <i class="feature-box__icon far fa-heart"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small">live a healthier life</h3>
+                        <p class="feature-box__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex odio fugit vitae, doloremque aliquam
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-tours" id="section-tours">
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary">
+                    Most popular tours
+                </h2>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--1">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--1">The Sea Explorer</span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>3 day tour</li>
+                                    <li>Up to 30 people</li>
+                                    <li>2 tour guides</li>
+                                    <li>Sleep in cozy hotels</li>
+                                    <li>Difficulty: easy</li>
+                                </ul>
+                            </div>
+                        </div> 
+                        <div class="card__side card__side--back card__side--back--1">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <p class="card__price-only">Only</p>
+                                    <p class="card__price-value ">$297</p>
+                                    <a href="#popup" class="btn btn--white u-margin-top-big">Book now!</a>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--2">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--2">The Forest Hiker</span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>7 day tour</li>
+                                    <li>Up to 40 people</li>
+                                    <li>6 tour guides</li>
+                                    <li>Sleep in provided tents</li>
+                                    <li>Difficulty: medium</li>
+                                </ul>
+                            </div>
+                        </div> 
+                        <div class="card__side card__side--back card__side--back--2">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <p class="card__price-only">Only</p>
+                                    <p class="card__price-value">$497</p>
+                                    <a href="#popup" class="btn btn--white u-margin-top-big">Book now!</a>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--3">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--3">The Snow Advernturer</span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>5 day tour</li>
+                                    <li>Up to 15 people</li>
+                                    <li>3 tour guides</li>
+                                    <li>Sleep in provided tents</li>
+                                    <li>Difficulty: hard</li>
+                                </ul>
+                            </div>
+                        </div> 
+                        <div class="card__side card__side--back card__side--back--3">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <p class="card__price-only">Only</p>
+                                    <p class="card__price-value">$897</p>
+                                    <a href="#popup" class="btn btn--white u-margin-top-big">Book now!</a>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="u-center-text u-margin-top-huge">
+                <a href="#" class="card__btn btn btn--green">
+                    Discover all tours
+                </a>
+            </div>
+        </section>
+
+        <section class="section-stories">
+            <div class="bg-video">
+                <video class="bg-video__content" autoplay muted loop>
+                    <source src="img/video.mp4" type="video/mp4">
+                    <source src="img/video.webm" type="video/webm">
+                        Your browser is not supported
+                </video>
+            </div>
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary">
+                    We make people genuinely happy
+                </h2>
+            </div>
+
+            <div class="row">
+                <div class="story">
+                    <figure class="story__shape">
+                        <img src="img/nat-8.jpg" alt="Person on a tour" class="story__img">
+                        <figcaption class="story__caption">Mary Smith</figcaption>
+                    </figure>
+                    <div class="story__text">
+                        <h3 class="heading-tertiary u-margin-bottom-small story__heading">
+                        I had the best week ever with my family
+                        </h3>   
+                        <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Ex odio fugit vitae, doloremque aliquam Ex odio fugit vitae, doloremque aliquam
+                        Ex odio fugit vitae, doloremque aliquam Ex odio fugit vitae, doloremque aliquamf
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="story">
+                    <figure class="story__shape">
+                        <img src="img/nat-9.jpg" alt="Person on a tour" class="story__img">
+                        <figcaption class="story__caption">Jack Wilson</figcaption>
+                    </figure>
+                    <div class="story__text">
+                        <h3 class="heading-tertiary u-margin-bottom-small story__heading">
+                        Wow! my life is completely different now
+                        </h3>   
+                        <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Ex odio fugit vitae, doloremque aliquam Ex odio fugit vitae, doloremque aliquam
+                        Ex odio fugit vitae, doloremque aliquam Ex odio fugit vitae, doloremque aliquamf
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="u-center-text u-margin-top-big">
+                <a href="#" class="btn-txt story__btn">
+                    Read all stories &rarr;
+                </a>
+            </div>
+        </section>
+        
+        <section class="section-book">
+            <div class="row">
+                <div class="book">
+                    <div class="book__form">
+                        <form action="#" class="form">
+                            <div class="u-margin-bottom-medium">
+                                <h2 class="heading-secondary">
+                                    Start Booking Now
+                                </h2>
+                            </div>
+                            <div class="form__group">
+                                <input type="text" class="form__input" placeholder="Full Name" id="name" required>
+                                <label for="name" class="form__label">Full Name</label>
+                            </div>
+                            <div class="form__group">
+                                <input type="email" class="form__input" placeholder="Email Address" id="email" required>
+                                <label for="email" class="form__label">Email Address</label>
+                            </div>
+
+                            <div class="form__group">
+                                <div class="form__radio-group">
+                                    <input type="radio" class="form__radio-input" id="small" name="size">
+                                    <label for="small" class="form__radio-label">
+                                        <span class="form__radio-btn"></span>
+                                        Small tour group</label>
+                                </div>
+                                <div class="form__radio-group">
+                                    <input type="radio" class="form__radio-input" id="large" name="size">
+                                    <label for="large" class="form__radio-label">
+                                        <span class="form__radio-btn"></span>
+                                        Large tour group</label>
+                                </div>
+                            </div>
+                            <div class="form__group">
+                                <a href="#" class="btn btn--green">
+                                    Next steps &rarr;
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+            <footer class="footer">
+            <div class="footer__logo-box">
+
+                <picture class="footer__logo">
+                    <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x"
+                            media="(max-width: 37.5em)">
+                    <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo" src="img/logo-green-2x.png">
+                </picture>
+           
+        </div>
+        <div class="row">
+            <ul class="col-1-of-2">
+                <div class="footer__navigation">
+                    <div class="ul footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Careers</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Privacy</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+                    </div>
+                </div>
+            </ul>
+            <div class="col-1-of-2">
+                <p class="footer__copyright">
+                    Built by <a href="#" class="footer__link">Elissa Colich</a>for the online course <a href="#" class="footer__link">Advanced CSS and Sass</a> Copyright &copy; by Jonas Schmedtmann. You are 100% allowed to use this webpage for both personal and commercial use, but NOT to claim as your own design. A credit to the original author is of course highly appreciated. 
+                </p>
+            </div>
+        </div>
     </footer>
 
-    <!-- END PAGE CONTENT -->
+    <div class="popup" id="popup">
+        <div class="popup__content">
+            <div class="popup__left">
+                <img src="img/nat-8.jpg" alt="tour image" class="popup__img">
+                <img src="img/nat-9.jpg" alt="tour image" class="popup__img">
+            </div>
+                
+            <div class="popup__right">
+                <a href="#section-tours" class="popup__close">&times;</a>
+                <h2 class="heading-secondary u-margin-bottom-small">
+                   start booking now 
+                </h2>
+                <h3 class="heading-tertiary u-margin-bottom-small">
+                    important &ndash; please read this information before booking
+                </h3>
+                <p class="popup__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed sed risus pretium quam. Aliquam sem et tortor consequat id. Volutpat odio facilisis mauris sit amet massa vitae. Mi bibendum neque egestas congue. Placerat orci nulla pellentesque dignissim enim sit. Vitae semper quis lectus nulla at volutpat diam ut venenatis. Malesuada pellentesque elit eget 
+                        Proin fermentum leo vel orci porta non pulvinar neque laoreet. Gravida neque convallis a cras semper. Molestie at elementum eu facilisis sed odio morbi quis. Faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget. Nam libero justo laoreet sit. Amet massa vitae tortor condimentum lacinia quis vel eros donec. Sit amet facilisis magna etiam. Imperdiet sed euismod nisi porta.
+                </p>
+                <a href="#" class="btn btn--green">Book now</a>  
+            </div>
+        </div>
+    </div>
+        
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/d07b1474/cloudflare-static/email-decode.min.js"></script>
-         </div>
-      
-      </div>
-      </div>
-    </body>
-
+    <!--
+        <section class="grid-test">
+            <div class="row">
+                <div class="col-1-of-2">
+                    col 1 of 2
+                </div>
+                <div class="col-1-of-2">
+                    col 1 of 2
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-of-3">
+                    col 1 of 3
+                </div>
+                <div class="col-1-of-3">
+                    col 1 of 3
+                </div>
+                <div class="col-1-of-3">
+                    col 1 of 3
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-of-3">
+                    col 1 of 3
+                </div>
+                <div class="col-2-of-3">
+                    col 2 of 3
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-of-4">
+                    col 1 of 4
+                </div>
+                <div class="col-1-of-4">
+                    col 1 of 4
+                </div>
+                <div class="col-1-of-4">
+                    col 1 of 4
+                </div>
+                <div class="col-1-of-4">
+                    col 1 of 4
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-of-4">
+                    col 1 of 4
+                </div>
+                <div class="col-1-of-4">
+                    col 1 of 4
+                </div>
+                <div class="col-2-of-4">
+                    col 2 of 4
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-of-4">
+                    col 1 of 4
+                </div>
+                <div class="col-3-of-4">
+                    col 3 of 4
+                </div>
+            </div>
+        </section>  
+    -->
+    
+</body>
 </html>
-
-
-
-
-
-
-
-
-
-
